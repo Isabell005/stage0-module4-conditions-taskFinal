@@ -2,7 +2,6 @@ package school.mjc.stage0.conditions.finalTask;
 
 public class DaysInMonth {
     public void printDays(int year, int month) {
-        int yearDay = 0;
         switch (month) {
             case (1),
                     (3),
@@ -14,9 +13,9 @@ public class DaysInMonth {
                 System.out.println("31");
                 break;
             case (2):
-                if (year == 2000) {
+                if (year >= 2000) {
                     System.out.println("29");
-                } else if (year == 1900) {
+                } else   {
                     System.out.println("28");
                 }
                 break;
