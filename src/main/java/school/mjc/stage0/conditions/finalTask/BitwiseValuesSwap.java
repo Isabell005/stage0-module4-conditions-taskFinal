@@ -3,11 +3,13 @@ package school.mjc.stage0.conditions.finalTask;
 public class BitwiseValuesSwap {
     public void swap(int first, int second) {
 
+        System.out.println(second);
 
+        first = first ^ second;  // XOR operation to swap values
+        second = first ^ second; // XOR operation to get the original value of 'first'
+        first = first ^ second;  // XOR operation to get the original value of 'second'
 
-        first = first ^ second;
-        second = first ^ second;
-        first = first ^ second;
+        System.out.println( second);
 
     }
 }
